@@ -1151,10 +1151,10 @@ TextureImporter:
       name: Tileset_46
       rect:
         serializedVersion: 2
-        x: 129
-        y: 0
-        width: 61
-        height: 29
+        x: 890
+        y: 14
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1173,10 +1173,10 @@ TextureImporter:
       name: Tileset_47
       rect:
         serializedVersion: 2
-        x: 197
-        y: 4
-        width: 21
-        height: 13
+        x: 129
+        y: 0
+        width: 61
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1195,10 +1195,10 @@ TextureImporter:
       name: Tileset_48
       rect:
         serializedVersion: 2
-        x: 224
-        y: 2
-        width: 64
-        height: 17
+        x: 197
+        y: 4
+        width: 21
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1217,6 +1217,28 @@ TextureImporter:
       name: Tileset_49
       rect:
         serializedVersion: 2
+        x: 224
+        y: 2
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a7cd967582b6a429685ff47dfa67dd
+      internalID: 522731390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_50
+      rect:
+        serializedVersion: 2
         x: 521
         y: 7
         width: 27
@@ -1229,8 +1251,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3a7cd967582b6a429685ff47dfa67dd
-      internalID: 522731390
+      spriteID: 2378af3f72bd1234fa5479dca1743826
+      internalID: -1041427020
       vertices: []
       indices: 
       edges: []
@@ -1297,6 +1319,7 @@ TextureImporter:
       Tileset_48: -791780115
       Tileset_49: 522731390
       Tileset_5: 2125083623
+      Tileset_50: -1041427020
       Tileset_6: 214684756
       Tileset_7: 1068298985
       Tileset_8: -860113367

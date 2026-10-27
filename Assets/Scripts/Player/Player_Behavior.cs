@@ -7,6 +7,7 @@ public class Player_Behavior : MonoBehaviour
     [SerializeField]
     private InputActionAsset m_inputAction;
     private InputAction m_move;
+    private Vector2 moveAmt;
     private InputAction m_jump;
 
     [Space(5)]
@@ -31,6 +32,7 @@ public class Player_Behavior : MonoBehaviour
     private SpriteRenderer m_sp;
 
     [Header("DEBUG")]
+    [SerializeField]
     private bool m_debugAutoRun = true;
 
     void Start()
@@ -42,14 +44,12 @@ public class Player_Behavior : MonoBehaviour
         m_sp = GetComponent<SpriteRenderer>();
 
         m_isGrounded = false;
+        m_debugAutoRun = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Moving();
-
-        
 
         bool isJumping = m_jump.WasPressedThisFrame();
         if (isJumping)
@@ -59,9 +59,6 @@ public class Player_Behavior : MonoBehaviour
         }
 
         Falling();
-
-
-
     }  
 
     void Moving()
@@ -69,15 +66,15 @@ public class Player_Behavior : MonoBehaviour
         //MOVEMENT
         if (m_debugAutoRun)
         {
-            Vector2 moveAmt = m_move.ReadValue<Vector2>().normalized;
             Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
-            calculatedVelocity.x = moveAmt.x * m_speed;
+            calculatedVelocity.x = m_speed;
             m_rigidbody2D.linearVelocity = calculatedVelocity;
         }
         else
         {
+            moveAmt = m_move.ReadValue<Vector2>().normalized;
             Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
-            calculatedVelocity.x = m_speed;
+            calculatedVelocity.x = moveAmt.x * m_speed;
             m_rigidbody2D.linearVelocity = calculatedVelocity;
         }
 
@@ -97,7 +94,7 @@ public class Player_Behavior : MonoBehaviour
         }
 
         //ANIMATOR
-        if (Mathf.Abs(moveAmt.x) > 0)
+        if (Mathf.Abs(m_rigidbody2D.linearVelocity.x) > Mathf.Epsilon)
         {
             SetBoolAnimation("isRunning", true);
         }
