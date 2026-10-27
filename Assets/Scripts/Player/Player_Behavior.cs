@@ -29,6 +29,10 @@ public class Player_Behavior : MonoBehaviour
     [Header("ANIMATION & SR")]
     private Animator m_animator;
     private SpriteRenderer m_sp;
+
+    [Header("DEBUG")]
+    private bool m_debugAutoRun = true;
+
     void Start()
     {
         m_move = m_inputAction.FindAction("Move");
@@ -63,16 +67,26 @@ public class Player_Behavior : MonoBehaviour
     void Moving()
     {
         //MOVEMENT
-        Vector2 moveAmt = m_move.ReadValue<Vector2>().normalized;
-        Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
-        calculatedVelocity.x = moveAmt.x * m_speed;
-        m_rigidbody2D.linearVelocity = calculatedVelocity;
+        if (m_debugAutoRun)
+        {
+            Vector2 moveAmt = m_move.ReadValue<Vector2>().normalized;
+            Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
+            calculatedVelocity.x = moveAmt.x * m_speed;
+            m_rigidbody2D.linearVelocity = calculatedVelocity;
+        }
+        else
+        {
+            Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
+            calculatedVelocity.x = m_speed;
+            m_rigidbody2D.linearVelocity = calculatedVelocity;
+        }
 
+        /*
         if(moveAmt.x == 0)
         {
             //Si tu ne touches pas le joystick
-        }
-        
+        }*/
+
         if (moveAmt.x < 0)
         {
             m_sp.flipX = true;
