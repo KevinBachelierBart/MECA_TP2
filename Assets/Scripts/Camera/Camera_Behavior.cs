@@ -10,8 +10,7 @@ public class Camera_Behavior : MonoBehaviour
     [SerializeField]
     private Vector3 m_StartingDistance;
     
-    [SerializeField]
-    private int m_currentDistance;
+    public int m_currentDistance;
 
     void Start()
     {
