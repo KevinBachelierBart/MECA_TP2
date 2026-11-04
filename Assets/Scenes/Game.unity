@@ -1596,7 +1596,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1625777694}
   m_Father: {fileID: 1859381903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &684050526
@@ -2750,6 +2751,7 @@ MonoBehaviour:
   m_offset: {x: 4.5, y: 1.5, z: -10}
   m_StartingDistance: {x: 0, y: 0, z: 0}
   m_currentDistance: 0
+  currentHeight: 0
 --- !u!1 &1052102319
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,7 +3458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcde9074835dbea40b9b2dc37a14c29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Score_Manager
-  m_cameraBehavior: {fileID: 0}
+  m_cameraBehavior: {fileID: 963194229}
+  m_score: 0
 --- !u!4 &1293098191
 Transform:
   m_ObjectHideFlags: 0
@@ -4070,6 +4073,7 @@ GameObject:
   - component: {fileID: 1625777694}
   - component: {fileID: 1625777695}
   - component: {fileID: 1625777696}
+  - component: {fileID: 1625777697}
   m_Layer: 0
   m_Name: GPI_Carrot
   m_TagString: Untagged
@@ -4085,14 +4089,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625777693}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.884, y: -0.961, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.054, y: 0.989, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 77085759}
   - {fileID: 1871781416}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 650586339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1625777695
 CircleCollider2D:
@@ -4142,6 +4146,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf895c847751604fb430118b61523e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Carrot_Behavior
+  m_carrotScore: 10
+--- !u!82 &1625777697
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625777693}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: d9180b8d43a911649af889bfb53ef44d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1678092370
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,9 +5098,8 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 629811627}
+  - {fileID: 1293098191}
   - {fileID: 1859381903}
   - {fileID: 684050527}
   - {fileID: 140595995}
   - {fileID: 1104359928}
-  - {fileID: 1625777694}
-  - {fileID: 1293098191}

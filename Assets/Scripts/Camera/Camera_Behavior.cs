@@ -3,7 +3,7 @@ using UnityEngine;
 public class Camera_Behavior : MonoBehaviour
 {
     [SerializeField]
-    private Transform m_target;
+    private Transform m_target;//Player
     [SerializeField]
     private Vector3 m_offset;
 
@@ -11,6 +11,9 @@ public class Camera_Behavior : MonoBehaviour
     private Vector3 m_StartingDistance;
     
     public int m_currentDistance;
+    
+    [SerializeField]
+    private int currentHeight;
 
     void Start()
     {
@@ -20,8 +23,6 @@ public class Camera_Behavior : MonoBehaviour
     void Update()
     {
         Vector3 currentPosition = m_target.transform.position;
-        //transform.position = currentPosition + m_offset;
-        //transform.position = new Vector3(m_target.position.x, transform.position.y + m_offset.y, transform.position.z);
         transform.position = new Vector3(currentPosition.x + m_offset.x, transform.position.y, transform.position.z);
 
 
