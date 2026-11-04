@@ -5,7 +5,7 @@ using UnityEngine;
 public class Display_Distance : MonoBehaviour
 {
     [SerializeField]
-    Camera_Behavior m_cameraBehavior;
+    private Score_Manager m_score_Manager;
 
     [SerializeField]
 
@@ -13,6 +13,6 @@ public class Display_Distance : MonoBehaviour
 
     private void Update()
     {
-        m_displayTMP.text = m_cameraBehavior.m_currentDistance.ToString();
+        m_displayTMP.text = m_score_Manager.m_score.ToString();
     }
 }

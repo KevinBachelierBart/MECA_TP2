@@ -3154,7 +3154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb529e66e3b28141ac72fe7259b2bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Display_Distance
-  m_cameraBehavior: {fileID: 963194229}
+  m_score_Manager: {fileID: 1293098190}
   m_displayTMP: {fileID: 226078568}
 --- !u!1 &1156596007
 GameObject:
