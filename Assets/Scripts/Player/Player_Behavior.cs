@@ -152,6 +152,8 @@ public class Player_Behavior : MonoBehaviour
     public void Dying()
     {
         m_canMove = false;
+        m_rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX;//LLM et pas top top 
+        m_rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;//LLM et pas top top 
 
         SetBoolAnimation("isFalling", false);
         SetBoolAnimation("isJumping", false);
@@ -189,8 +191,9 @@ public class Player_Behavior : MonoBehaviour
         m_audioSource.PlayOneShot(myAudioClip);
     }
 
-    private void SparkEffect(bool isActivated)
+    public void SparkEffect(bool isActivated)
     {
         m_Spark.SetActive(isActivated);
     }
+
 }

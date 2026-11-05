@@ -3265,12 +3265,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd5e54eda9514446ac9043218939112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
+  m_player: {fileID: 629811627}
   m_platformPrefab:
   - {fileID: 4880237813672765073, guid: 32ea18a99736dab4cb4d143e3cab5fd6, type: 3}
   - {fileID: 1738370113900015468, guid: be9be4a1b85a2464e8f349d131c00cd2, type: 3}
   - {fileID: 7371579698868709776, guid: d1a852dbc065d5a40862b540ae2d61d4, type: 3}
   m_startingPlatform: {fileID: 735157284}
-  m_player: {fileID: 629811627}
   m_distanceForPlatformSpawn: 10
   m_distanceBetweenPlatform: 5
   m_platformCache: []
@@ -4291,9 +4291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd5e54eda9514446ac9043218939112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
+  m_player: {fileID: 629811627}
   m_platformPrefab: []
   m_startingPlatform: {fileID: 1213769635}
-  m_player: {fileID: 629811627}
   m_distanceForPlatformSpawn: 10
   m_distanceBetweenPlatform: 0
   m_platformCache: []
