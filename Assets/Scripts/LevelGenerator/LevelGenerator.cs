@@ -4,7 +4,7 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     [SerializeField]
-    private GameObject m_platformPrefab;
+    private GameObject[] m_platformPrefab;
     [SerializeField]
     private Transform m_startingPlatform;
     private Transform m_lastCreatedPlatform;
@@ -49,9 +49,13 @@ public class LevelGenerator : MonoBehaviour
 
     private Transform SpawnPlatform(Vector3 spawnPosition)
     {
-        spawnPosition.x += m_distanceBetweenPlatform; 
+        spawnPosition.x += m_distanceBetweenPlatform;
 
-        GameObject newPlatform = Instantiate(m_platformPrefab, spawnPosition, Quaternion.identity);
+        //Randomize spawning
+        int random = Random.Range(0, 2);//0 to 1
+
+
+        GameObject newPlatform = Instantiate(m_platformPrefab[random], spawnPosition, Quaternion.identity);
         return newPlatform.transform;
     }
 
