@@ -9,16 +9,23 @@ public class LevelGenerator : MonoBehaviour
     private Transform m_startingPlatform;
     private Transform m_lastCreatedPlatform;
     [SerializeField] private Transform m_player;
+    [Header("DESIGN")]
     [SerializeField] private float m_distanceForPlatformSpawn;
+    [Space(2)]
+    [SerializeField] private float m_distanceBetweenPlatform;
 
+    [Header("LIST")]
     [SerializeField]
     private List<Transform> m_platformCache;
     [SerializeField] private int m_maxPlatformCount;
+
+
 
     void Start()
     {
         m_platformCache = new List<Transform>();
         m_lastCreatedPlatform = m_startingPlatform;
+        m_platformCache.Add(m_startingPlatform);
     }
 
     private void Update()
@@ -42,6 +49,8 @@ public class LevelGenerator : MonoBehaviour
 
     private Transform SpawnPlatform(Vector3 spawnPosition)
     {
+        spawnPosition.x += m_distanceBetweenPlatform; 
+
         GameObject newPlatform = Instantiate(m_platformPrefab, spawnPosition, Quaternion.identity);
         return newPlatform.transform;
     }
