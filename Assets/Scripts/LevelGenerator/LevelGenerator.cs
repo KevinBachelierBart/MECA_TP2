@@ -52,7 +52,7 @@ public class LevelGenerator : MonoBehaviour
         spawnPosition.x += m_distanceBetweenPlatform;
 
         //Randomize spawning
-        int random = Random.Range(0, 2);//0 to 1
+        int random = Random.Range(0, m_platformPrefab.Length);//0 to 1
 
 
         GameObject newPlatform = Instantiate(m_platformPrefab[random], spawnPosition, Quaternion.identity);

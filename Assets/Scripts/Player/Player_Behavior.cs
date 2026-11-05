@@ -17,6 +17,7 @@ public class Player_Behavior : MonoBehaviour
 
     [Header("DESIGN")]
     private bool m_isGrounded;
+    private bool m_canMove;
 
     [Space(5)]
     [SerializeField]
@@ -38,17 +39,24 @@ public class Player_Behavior : MonoBehaviour
     [SerializeField]
     private bool m_debugAutoRun = true;
 
+    private GameObject m_Spark;
+
     void Start()
     {
         m_move = m_inputAction.FindAction("Move");
         m_jump = m_inputAction.FindAction("Jump");
+
         m_rigidbody2D = GetComponent<Rigidbody2D>();
+
         m_animator = GetComponent<Animator>();
+
         m_sp = GetComponent<SpriteRenderer>();
 
-        m_isGrounded = false;
-
+        m_Spark = transform.GetChild(0).gameObject;
         m_audioSource = GetComponent<AudioSource>();
+
+        m_isGrounded = false;
+        m_canMove = true;
     }
 
     void Update()
@@ -67,45 +75,49 @@ public class Player_Behavior : MonoBehaviour
 
     void Moving()
     {
-        //MOVEMENT
-        if (m_debugAutoRun)
+        if(m_canMove)
         {
-            Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
-            calculatedVelocity.x = m_speed;
-            m_rigidbody2D.linearVelocity = calculatedVelocity;
-        }
-        else
-        {
-            moveAmt = m_move.ReadValue<Vector2>().normalized;
-            Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
-            calculatedVelocity.x = moveAmt.x * m_speed;
-            m_rigidbody2D.linearVelocity = calculatedVelocity;
-        }
+            //MOVEMENT
+            if (m_debugAutoRun)
+            {
+                Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
+                calculatedVelocity.x = m_speed;
+                m_rigidbody2D.linearVelocity = calculatedVelocity;
+            }
+            else
+            {
+                moveAmt = m_move.ReadValue<Vector2>().normalized;
+                Vector2 calculatedVelocity = m_rigidbody2D.linearVelocity;
+                calculatedVelocity.x = moveAmt.x * m_speed;
+                m_rigidbody2D.linearVelocity = calculatedVelocity;
+            }
 
-        /*
-        if(moveAmt.x == 0)
-        {
-            //Si tu ne touches pas le joystick
-        }*/
+            /*
+            if(moveAmt.x == 0)
+            {
+                //Si tu ne touches pas le joystick
+            }*/
 
-        if (moveAmt.x < 0)
-        {
-            m_sp.flipX = true;
-        }
-        else
-        {
-            m_sp.flipX = false;
-        }
+            if (moveAmt.x < 0)
+            {
+                m_sp.flipX = true;
+            }
+            else
+            {
+                m_sp.flipX = false;
+            }
 
-        //ANIMATOR
-        if (Mathf.Abs(m_rigidbody2D.linearVelocity.x) > Mathf.Epsilon)
-        {
-            SetBoolAnimation("isRunning", true);
+            //ANIMATOR
+            if (Mathf.Abs(m_rigidbody2D.linearVelocity.x) > Mathf.Epsilon)
+            {
+                SetBoolAnimation("isRunning", true);
+            }
+            else
+            {
+                SetBoolAnimation("isRunning", false);
+            }
         }
-        else
-        {
-            SetBoolAnimation("isRunning", false);
-        }
+        
 
     }
 
@@ -124,6 +136,8 @@ public class Player_Behavior : MonoBehaviour
         {
             //Debug.Log("Tu as deja fait ton double saut");
         }
+
+        SparkEffect(false);
     }
 
     void Falling()
@@ -135,7 +149,16 @@ public class Player_Behavior : MonoBehaviour
         }
     }
 
-    
+    public void Dying()
+    {
+        m_canMove = false;
+
+        SetBoolAnimation("isFalling", false);
+        SetBoolAnimation("isJumping", false);
+
+        SetBoolAnimation("isDying", true);
+
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
@@ -144,6 +167,11 @@ public class Player_Behavior : MonoBehaviour
             m_doubleJump = 0;
             SetBoolAnimation("a_IsGrounded", true);
             SetBoolAnimation("isFalling", false);
+        }
+        else if(collision.gameObject.layer == LayerMask.NameToLayer("Pipe"))
+        {
+            SparkEffect(true);
+            m_doubleJump = 0;
         }
     }
 
@@ -155,5 +183,10 @@ public class Player_Behavior : MonoBehaviour
     public void PlayGPISound(AudioClip myAudioClip)
     {
         m_audioSource.PlayOneShot(myAudioClip);
+    }
+
+    private void SparkEffect(bool isActivated)
+    {
+        m_Spark.SetActive(isActivated);
     }
 }

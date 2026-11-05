@@ -1,0 +1,1515 @@
+fileFormatVersion: 2
+guid: 363a3b97f7d5824449a8897b365eb9df
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 339
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f522f41512a86b8458658275440ddfa0
+      internalID: 1583981511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 339
+        width: 4
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f197e50c8baac43928bdf08c786235
+      internalID: -2122911057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 339
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296cb698cd54e9b4f9ce656e47b702f3
+      internalID: -248246311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 339
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9e050250925834ba468d044462a197
+      internalID: -1262048498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 339
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53b103af5f4b674a99673a35a48bb00
+      internalID: -495744308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 339
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6597dfe68af9a841af56ad3a382c19d
+      internalID: 852860749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 339
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f4b569d68f0b443a9c45707b8a067b
+      internalID: 276461622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 335
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc1e66cb0b04ba4fa7ac63943517c15
+      internalID: 274698714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 339
+        width: 52
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d812d277756c7794691490f75919afaa
+      internalID: 1855932709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 339
+        width: 49
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b1d0611f1f3e847b54c25c561ac6fa
+      internalID: -450111809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 339
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248d27ae0fa0d104eba2365308218561
+      internalID: -1442673940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 258
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a4d9d6449194849ade7c08bdd37165
+      internalID: 1814359734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 258
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e144d476923334498ee963ff042f49
+      internalID: -105194071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 258
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ca3d27de22fb74ba4b28298dd967dc
+      internalID: -1363413633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 258
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efc446ff0f9f1e4a867fea02e543e8a
+      internalID: -1415410441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 258
+        width: 4
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2401f2ed6e5582742865da6acfc9f3fd
+      internalID: 761429322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 258
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca16529d76fa4e41b58ffc4bf623422
+      internalID: 1578907163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 258
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e33561b6387a346b9cab74cccdca31
+      internalID: 2106997530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 258
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ffa2449f9c73e48a71e7ebdc3a8424
+      internalID: 898694653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 253
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04261c1584a5ffa42aa2d9ecaf6a332f
+      internalID: 985629880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 258
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e93b1cad13c715438f711f570892aec
+      internalID: -1113731900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 258
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138b989d9872c864e94c992561b08b50
+      internalID: -360214748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 258
+        width: 54
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c5639258e48534696b01fcca2ec24b
+      internalID: -2106830253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 176
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce6becd9c4ddf44db9cf294440405f6
+      internalID: 1957904784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 191
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7566a3428dbefde429abbc582ac4fa9a
+      internalID: 896551651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 176
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d43972a3d8164478bd2cadac746aa0
+      internalID: 370694241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 176
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4bf08328edb964bb810b532b413ec5
+      internalID: -347102983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 176
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb246932e058bb4cacedf0ba400cc7f
+      internalID: 1760450783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 176
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159958d44a4bde445a576274bed89886
+      internalID: 193396011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 176
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06b5db68c492e6469be48d1d291664f
+      internalID: 2010772740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 176
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68561240a0b99843b4f18ba4f4a2184
+      internalID: -1357993439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 176
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10f8c7684460244f928bc5959fde74c
+      internalID: 1831722944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 176
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c912a556234586845b647dfd9dce22b3
+      internalID: 1982580750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 176
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33e69b60afb37242a57d4439e52d453
+      internalID: 2122213377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 176
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb773b3131026624d8ad3fd9b3bc757d
+      internalID: 1059564806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 171
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d556ae2b55d32f64bad83b89816a3ba8
+      internalID: 1731224947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 176
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1d10c541ffeac4f82bcb34dc592c26
+      internalID: -1132518171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 95
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56e6916c7cba9443a1c5aea3992aaf7
+      internalID: -1650833886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 95
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fe5988f23c2924ca9eeaba42ef8a69
+      internalID: -941218482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 95
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4b6f05f5a9c25449ff89510d1ca857
+      internalID: -1606499478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 90
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e02146195b585408acf3b664e32444
+      internalID: 2004206876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 95
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52662aa27de6ae448bdb5ae85e7a0b5
+      internalID: -712374324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 95
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc3600e699563846a0ceb509a00e833
+      internalID: 485766106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 95
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dec455386fbd9c439faadce53e29325
+      internalID: 1782169980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 95
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9120393bbff714593cd4fb59ff07c7
+      internalID: 1549099477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 90
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4fd1804f1b394498d7bde876c3543b
+      internalID: 620826966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 94
+        width: 72
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a67eb0a119be54aa493c66b64eea08
+      internalID: 1358467837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 94
+        width: 69
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b09ed57aa55bc488fc3809b32be14b
+      internalID: 514727496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 94
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5baa68e6047e34ca84a05cf59e4437
+      internalID: 165267254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 13
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6383924b2489565488fee4a54108d397
+      internalID: 174863200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 8
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3711f078b6da0419ff53859eaec63e
+      internalID: 398398782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 13
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db9dba041fc0dd4d8462c0fa3e2c11a
+      internalID: 2121493699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 13
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98bd1ac304df7240a9be68d3e0bba21
+      internalID: -577871622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 13
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b576e09a6aa65459598b2ebac6215a
+      internalID: -1322603075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 13
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d89dadaaaa6fdb4abe0aa0b91a7db32
+      internalID: 416632664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 13
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1072fee0db2d445bbe47c305543d3d
+      internalID: -445063359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 13
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302af2f87710fdc46ac980c4fcad7599
+      internalID: 378139249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 13
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42d81bf01171714ab1b59ad92d2dda1
+      internalID: 604131130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeTraps_SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 13
+        width: 7
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed8ac272969bfc4fbfff86d6f8e5b20
+      internalID: 1294273058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e1eaa32de1bb3ee4c9034b18ca605310
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      LargeTraps_SpriteSheet_0: 1583981511
+      LargeTraps_SpriteSheet_1: -2122911057
+      LargeTraps_SpriteSheet_10: -1442673940
+      LargeTraps_SpriteSheet_11: 1814359734
+      LargeTraps_SpriteSheet_12: -105194071
+      LargeTraps_SpriteSheet_13: -1363413633
+      LargeTraps_SpriteSheet_14: -1415410441
+      LargeTraps_SpriteSheet_15: 761429322
+      LargeTraps_SpriteSheet_16: 1578907163
+      LargeTraps_SpriteSheet_17: 2106997530
+      LargeTraps_SpriteSheet_18: 898694653
+      LargeTraps_SpriteSheet_19: 985629880
+      LargeTraps_SpriteSheet_2: -248246311
+      LargeTraps_SpriteSheet_20: -1113731900
+      LargeTraps_SpriteSheet_21: -360214748
+      LargeTraps_SpriteSheet_22: -2106830253
+      LargeTraps_SpriteSheet_23: 1957904784
+      LargeTraps_SpriteSheet_24: 896551651
+      LargeTraps_SpriteSheet_25: 370694241
+      LargeTraps_SpriteSheet_26: -347102983
+      LargeTraps_SpriteSheet_27: 1760450783
+      LargeTraps_SpriteSheet_28: 193396011
+      LargeTraps_SpriteSheet_29: 2010772740
+      LargeTraps_SpriteSheet_3: -1262048498
+      LargeTraps_SpriteSheet_30: -1357993439
+      LargeTraps_SpriteSheet_31: 1831722944
+      LargeTraps_SpriteSheet_32: 1982580750
+      LargeTraps_SpriteSheet_33: 2122213377
+      LargeTraps_SpriteSheet_34: 1059564806
+      LargeTraps_SpriteSheet_35: 1731224947
+      LargeTraps_SpriteSheet_36: -1132518171
+      LargeTraps_SpriteSheet_37: -1650833886
+      LargeTraps_SpriteSheet_38: -941218482
+      LargeTraps_SpriteSheet_39: -1606499478
+      LargeTraps_SpriteSheet_4: -495744308
+      LargeTraps_SpriteSheet_40: 2004206876
+      LargeTraps_SpriteSheet_41: -712374324
+      LargeTraps_SpriteSheet_42: 485766106
+      LargeTraps_SpriteSheet_43: 1782169980
+      LargeTraps_SpriteSheet_44: 1549099477
+      LargeTraps_SpriteSheet_45: 620826966
+      LargeTraps_SpriteSheet_46: 1358467837
+      LargeTraps_SpriteSheet_47: 514727496
+      LargeTraps_SpriteSheet_48: 165267254
+      LargeTraps_SpriteSheet_49: 174863200
+      LargeTraps_SpriteSheet_5: 852860749
+      LargeTraps_SpriteSheet_50: 398398782
+      LargeTraps_SpriteSheet_51: 2121493699
+      LargeTraps_SpriteSheet_52: -577871622
+      LargeTraps_SpriteSheet_53: -1322603075
+      LargeTraps_SpriteSheet_54: 416632664
+      LargeTraps_SpriteSheet_55: -445063359
+      LargeTraps_SpriteSheet_56: 378139249
+      LargeTraps_SpriteSheet_57: 604131130
+      LargeTraps_SpriteSheet_58: 1294273058
+      LargeTraps_SpriteSheet_6: 276461622
+      LargeTraps_SpriteSheet_7: 274698714
+      LargeTraps_SpriteSheet_8: 1855932709
+      LargeTraps_SpriteSheet_9: -450111809
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
