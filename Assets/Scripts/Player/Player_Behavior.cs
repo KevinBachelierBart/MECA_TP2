@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 
 public class Player_Behavior : MonoBehaviour
@@ -25,7 +26,9 @@ public class Player_Behavior : MonoBehaviour
     [SerializeField]
     private int m_jumpForce;
     private int m_doubleJump;
-    
+
+    [Header("SOUNDS")]
+    private AudioSource m_audioSource;
 
     [Header("ANIMATION & SR")]
     private Animator m_animator;
@@ -44,7 +47,8 @@ public class Player_Behavior : MonoBehaviour
         m_sp = GetComponent<SpriteRenderer>();
 
         m_isGrounded = false;
-        m_debugAutoRun = true;
+
+        m_audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -146,5 +150,10 @@ public class Player_Behavior : MonoBehaviour
     void SetBoolAnimation(string animName, bool animBool)
     {
         m_animator.SetBool(animName, animBool);
+    }
+
+    public void PlayGPISound(AudioClip myAudioClip)
+    {
+        m_audioSource.PlayOneShot(myAudioClip);
     }
 }

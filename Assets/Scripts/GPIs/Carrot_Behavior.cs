@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class Carrot_Behavior : MonoBehaviour
 {
-    private AudioSource m_carrotSound;
+    [SerializeField]
+    private AudioClip m_carrotSound;
     private Score_Manager m_scoreManager;
 
     [SerializeField]
     private int m_carrotScore;
     private void Start()
     {
-        m_carrotSound = GetComponent<AudioSource>();
         m_scoreManager = FindFirstObjectByType<Score_Manager>();
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -19,9 +20,9 @@ public class Carrot_Behavior : MonoBehaviour
         
         if (playerScript != null)
         {
-            m_carrotSound.Play();
-
             m_scoreManager.AddScore(m_carrotScore);
+
+            playerScript.PlayGPISound(m_carrotSound);
 
             Destroy(this.gameObject);
         }
