@@ -3,12 +3,14 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
+    [Header("Player")]
+    [SerializeField] private Transform m_player;
+
     [SerializeField]
     private GameObject[] m_platformPrefab;
     [SerializeField]
     private Transform m_startingPlatform;
     private Transform m_lastCreatedPlatform;
-    [SerializeField] private Transform m_player;
     [Header("DESIGN")]
     [SerializeField] private float m_distanceForPlatformSpawn;
     [Space(2)]
@@ -52,7 +54,7 @@ public class LevelGenerator : MonoBehaviour
         spawnPosition.x += m_distanceBetweenPlatform;
 
         //Randomize spawning
-        int random = Random.Range(0, m_platformPrefab.Length);//0 to 1
+        int random = Random.Range(0, m_platformPrefab.Length);//0 to 2
 
 
         GameObject newPlatform = Instantiate(m_platformPrefab[random], spawnPosition, Quaternion.identity);

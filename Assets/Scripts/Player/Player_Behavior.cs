@@ -35,7 +35,7 @@ public class Player_Behavior : MonoBehaviour
     private Animator m_animator;
     private SpriteRenderer m_sp;
 
-    [Header("DEBUG")]
+    [Header("DEBUG--------------------------------------------------")]
     [SerializeField]
     private bool m_debugAutoRun = true;
 
@@ -167,6 +167,10 @@ public class Player_Behavior : MonoBehaviour
             m_doubleJump = 0;
             SetBoolAnimation("a_IsGrounded", true);
             SetBoolAnimation("isFalling", false);
+        }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("SideDeath"))
+        {
+            Dying();
         }
         else if(collision.gameObject.layer == LayerMask.NameToLayer("Pipe"))
         {

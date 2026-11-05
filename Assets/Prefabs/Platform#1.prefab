@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 2465538367008816714}
   - component: {fileID: 3855872757893091878}
   - component: {fileID: 661411091809036515}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DeadlyCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
