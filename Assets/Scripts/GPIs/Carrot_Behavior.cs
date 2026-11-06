@@ -22,7 +22,9 @@ public class Carrot_Behavior : MonoBehaviour
         {
             m_scoreManager.AddScore(m_carrotScore);
 
-            playerScript.PlayGPISound(m_carrotSound);
+            //Je pense que c est sale af....
+            Sound_Manager soundManager = playerScript.m_soundManager;
+            soundManager.PlayAudio(soundManager.m_GPICarrot);
 
             Destroy(this.gameObject);
         }

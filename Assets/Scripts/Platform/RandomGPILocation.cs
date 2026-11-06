@@ -13,7 +13,5 @@ public class RandomGPILocation : MonoBehaviour
 
         //m_GPI.transform.position = m_Locations[random].position;
         Instantiate(m_GPI, m_Locations[random].position, Quaternion.identity);
-
-        Debug.Log("Tiens vla ton GPI");
     }
 }

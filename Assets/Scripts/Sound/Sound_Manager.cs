@@ -2,19 +2,20 @@ using UnityEngine;
 
 public class Sound_Manager : MonoBehaviour
 {
-    //On player
-
     private AudioSource m_audioSource;
+
+    public AudioClip m_GPICarrot;
     public AudioClip m_jumpingSound;
     public AudioClip m_landingSound;
     public AudioClip m_grindingSound;
+    public AudioClip m_death;
     private void Start()
     {
         m_audioSource = GetComponent<AudioSource>();
     }
     public void PlayAudioNewPitch(AudioClip myAudioClip, float newPitch)
     {
-
+        //Si besoin
     }
 
     public void PlayAudio(AudioClip myAudioClip) 

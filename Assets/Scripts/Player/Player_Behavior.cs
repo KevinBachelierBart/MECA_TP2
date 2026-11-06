@@ -1,6 +1,8 @@
+using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player_Behavior : MonoBehaviour
 {
@@ -28,8 +30,9 @@ public class Player_Behavior : MonoBehaviour
     private int m_doubleJump;
 
     [Header("SOUNDS")]
-    private Sound_Manager m_soundManager;
+    public Sound_Manager m_soundManager;
     private AudioSource m_audioSource;
+    [SerializeField] private AudioSource m_GrindSliding;
 
     [Header("ANIMATION & SR")]
     private Animator m_animator;
@@ -53,7 +56,6 @@ public class Player_Behavior : MonoBehaviour
         m_sp = GetComponent<SpriteRenderer>();
 
         m_Spark = transform.GetChild(0).gameObject;
-        m_soundManager = GetComponent<Sound_Manager>();
         m_audioSource = GetComponent<AudioSource>();
 
         m_isGrounded = false;
@@ -67,13 +69,14 @@ public class Player_Behavior : MonoBehaviour
         bool isJumping = m_jump.WasPressedThisFrame();
         if (isJumping)
         {
-            Jump();
+            Jumping();
             
         }
 
         Falling();
-    }  
+    }
 
+    #region Mechanics
     void Moving()
     {
         if(m_canMove)
@@ -122,7 +125,7 @@ public class Player_Behavior : MonoBehaviour
 
     }
 
-    void Jump()
+    void Jumping()
     {
         m_doubleJump++;
 
@@ -142,8 +145,7 @@ public class Player_Behavior : MonoBehaviour
         m_soundManager.PlayAudio(m_soundManager.m_jumpingSound);
         
         SparkEffect(false);
-        m_soundManager.PlayAudioCondition(false, m_soundManager.m_grindingSound);
-
+        m_GrindSliding.Stop();//Grinding
     }
 
     void Falling()
@@ -161,12 +163,17 @@ public class Player_Behavior : MonoBehaviour
         m_rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX;//LLM et pas top top 
         m_rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;//LLM et pas top top 
 
+        m_soundManager.PlayAudio(m_soundManager.m_death);
+
         SetBoolAnimation("isFalling", false);
         SetBoolAnimation("isJumping", false);
 
         SetBoolAnimation("isDying", true);
 
     }
+
+    #endregion
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -187,23 +194,25 @@ public class Player_Behavior : MonoBehaviour
         {
             SparkEffect(true);
             m_doubleJump = 0;
-            m_soundManager.PlayAudioCondition(true, m_soundManager.m_grindingSound);
-            //PlayGrindSound(true);
+            m_GrindSliding.Play();
         }
-    }
-
-    void SetBoolAnimation(string animName, bool animBool)
-    {
-        m_animator.SetBool(animName, animBool);
-    }
-
-    public void PlayGPISound(AudioClip myAudioClip)
-    {
-        m_audioSource.PlayOneShot(myAudioClip);
     }
 
     public void SparkEffect(bool isActivated)
     {
         m_Spark.SetActive(isActivated);
+    }
+
+    public void TransitionToDeathScreen()
+    {
+        //Debug.LogError("TU ES MORT");
+        SceneManager.LoadScene("Death_Scene");
+    }
+    
+    
+    //UTILITIES------------
+    void SetBoolAnimation(string animName, bool animBool)
+    {
+        m_animator.SetBool(animName, animBool);
     }
 }

@@ -16,7 +16,7 @@ public class StopRiding : MonoBehaviour
             playerScript.SparkEffect(false);
 
             //Je pense que c est sale af....
-            Sound_Manager soundManager = playerScript.GetComponent<Sound_Manager>();
+            Sound_Manager soundManager = playerScript.m_soundManager;
             soundManager.PlayAudioCondition(false, soundManager.m_grindingSound);
         }
     }

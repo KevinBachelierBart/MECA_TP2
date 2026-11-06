@@ -3,6 +3,7 @@ using UnityEngine;
 public class Difficulty_Manager : MonoBehaviour
 {
     private Player_Behavior m_player;
+    private Sound_Manager m_sound_Manager;
     private float m_elapsed;
     [SerializeField]
     private float m_delayIncreaseDifficulty;
@@ -11,6 +12,7 @@ public class Difficulty_Manager : MonoBehaviour
     private void Start()
     {
         m_player = GetComponent<Player_Behavior>();
+        m_sound_Manager = m_player.GetComponent<Sound_Manager>();
     }
     void Update()
     {
@@ -20,7 +22,7 @@ public class Difficulty_Manager : MonoBehaviour
         {
             m_elapsed = 0;
             m_player.m_speed += m_increaseValue;
-
+            
         }
     }
 }
