@@ -44,6 +44,11 @@ public class HierarchyObjectColor
                 backgroundColor = new Color(1f, 0.85f, 0.1f);
                 textColor = Color.black;
             }
+            if (obj.name == "LevelGenerator")
+            {
+                backgroundColor = new Color(1f, 0.4f, 0.7f);
+                textColor = Color.white;
+            }
 
             // Or you can use switch case
             //switch (obj.name)

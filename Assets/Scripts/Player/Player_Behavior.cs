@@ -20,8 +20,7 @@ public class Player_Behavior : MonoBehaviour
     private bool m_canMove;
 
     [Space(5)]
-    [SerializeField]
-    private int m_speed;
+    public int m_speed;
 
     [Space(5)]
     [SerializeField]
@@ -29,6 +28,7 @@ public class Player_Behavior : MonoBehaviour
     private int m_doubleJump;
 
     [Header("SOUNDS")]
+    private Sound_Manager m_soundManager;
     private AudioSource m_audioSource;
 
     [Header("ANIMATION & SR")]
@@ -53,6 +53,7 @@ public class Player_Behavior : MonoBehaviour
         m_sp = GetComponent<SpriteRenderer>();
 
         m_Spark = transform.GetChild(0).gameObject;
+        m_soundManager = GetComponent<Sound_Manager>();
         m_audioSource = GetComponent<AudioSource>();
 
         m_isGrounded = false;
@@ -132,12 +133,17 @@ public class Player_Behavior : MonoBehaviour
             m_rigidbody2D.AddForce(Vector2.up * m_jumpForce, ForceMode2D.Impulse);
             m_isGrounded = false;
         }
+        /*
         else
         {
-            //Debug.Log("Tu as deja fait ton double saut");
-        }
-
+            Debug.Log("Tu as deja fait ton double saut");
+        }*/
+        
+        m_soundManager.PlayAudio(m_soundManager.m_jumpingSound);
+        
         SparkEffect(false);
+        m_soundManager.PlayAudioCondition(false, m_soundManager.m_grindingSound);
+
     }
 
     void Falling()
@@ -161,6 +167,7 @@ public class Player_Behavior : MonoBehaviour
         SetBoolAnimation("isDying", true);
 
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
@@ -169,6 +176,8 @@ public class Player_Behavior : MonoBehaviour
             m_doubleJump = 0;
             SetBoolAnimation("a_IsGrounded", true);
             SetBoolAnimation("isFalling", false);
+
+            m_soundManager.PlayAudio(m_soundManager.m_landingSound);
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("SideDeath"))
         {
@@ -178,6 +187,8 @@ public class Player_Behavior : MonoBehaviour
         {
             SparkEffect(true);
             m_doubleJump = 0;
+            m_soundManager.PlayAudioCondition(true, m_soundManager.m_grindingSound);
+            //PlayGrindSound(true);
         }
     }
 
@@ -195,5 +206,4 @@ public class Player_Behavior : MonoBehaviour
     {
         m_Spark.SetActive(isActivated);
     }
-
 }
