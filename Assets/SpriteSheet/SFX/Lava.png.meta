@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: 1dc973f442f8ee6438eba4da222620f2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 77
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552d49e820e897a47a1d380533733969
+      internalID: 1642825059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 192
+        width: 80
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64f75b05a8910541b99f58f7a537929
+      internalID: 50502542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 193
+        width: 106
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadba7a2585dbdf4bb5bcf3af53924ac
+      internalID: 2055041695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 192
+        width: 107
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b9610c5097896469efb4678ced1cc5
+      internalID: -462562857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 191
+        width: 103
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090911c74f6286c4db19ef9e736051b5
+      internalID: -1982634654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 34
+        width: 102
+        height: 137
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde1341c10bd74b429316dfeb4c7bbda
+      internalID: 1624622227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 34
+        width: 112
+        height: 137
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d703547ac41874b87f44c9b13a3db5
+      internalID: -1228755900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 34
+        width: 95
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361632fbbd09a7749acd5270db2d360f
+      internalID: -1596988036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 34
+        width: 81
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fc45cc4e1714340b3a861d29a87464
+      internalID: 1076223985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 34
+        width: 91
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b05d8d30322a724e88423a641282540
+      internalID: -415524049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 32fe87dce9cc6494c85e6d471c545e2a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_0: 1642825059
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_1: 50502542
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_10: 418259000
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_11: 1395809799
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_12: 382405437
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_13: 1733721121
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_14: 246869678
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_15: -1509886800
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_16: -1228755900
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_17: 1507422806
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_18: -1596988036
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_19: 1076223985
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_2: 2055041695
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_20: -415524049
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_3: -462562857
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_4: -1982634654
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_5: 1624622227
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_6: -1613966988
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_7: 602129968
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_8: 285193715
+      volcano-lava-or-magma-animation-game-sprite-effect-vector-removebg-preview_9: -743341766
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
