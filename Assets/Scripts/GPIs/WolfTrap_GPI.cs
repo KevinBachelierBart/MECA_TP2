@@ -4,10 +4,11 @@ using UnityEngine;
 public class WolfTrap_GPI : MonoBehaviour
 {
     [SerializeField]
-    private AudioClip m_trapSound;
-
+    //private AudioClip m_trapSound; Maybe later
+    private Animator m_animator;
     private void Start()
     {
+        m_animator = GetComponent<Animator>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +16,8 @@ public class WolfTrap_GPI : MonoBehaviour
 
         if (playerScript != null)
         {
+            m_animator.Play("WolfTrap");
+
             //playerScript.PlayGPISound(m_trapSound);
             playerScript.Dying();
         }

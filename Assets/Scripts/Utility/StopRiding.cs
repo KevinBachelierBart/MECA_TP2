@@ -6,6 +6,7 @@ public class StopRiding : MonoBehaviour
     //Avec ca j ai un trigger dans ma platform#3 pour stopper le riding animation
     //si jamais le joueur ne saute pas
     //Car c est le saut qui arrete le riding sinon
+    //CELA DIT CLAIREMENT BESOIN DE MIEUX GERER LA COMM ENTRE MES SCRIPTS
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -16,8 +17,7 @@ public class StopRiding : MonoBehaviour
             playerScript.SparkEffect(false);
 
             //Je pense que c est sale af....
-            Sound_Manager soundManager = playerScript.m_soundManager;
-            soundManager.PlayAudioCondition(false, soundManager.m_grindingSound);
+            playerScript.m_GrindSliding.Stop();
         }
     }
 }

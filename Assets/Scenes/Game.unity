@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 8714949}
   - component: {fileID: 8714948}
   m_Layer: 0
-  m_Name: GrindSliding
+  m_Name: Sound_GrindSliding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,12 +241,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8714947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9442, y: -0.31054, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.26855, y: 0.279865, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 629811627}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &31161450
 GameObject:
@@ -431,10 +431,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 117314101563189152, guid: 7f6069b893d402443b99d9cff5b8ad71, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 254312951}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6069b893d402443b99d9cff5b8ad71, type: 3}
 --- !u!1 &140595994
 GameObject:
@@ -974,24 +971,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &254312946 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 117314101563189152, guid: 7f6069b893d402443b99d9cff5b8ad71, type: 3}
-  m_PrefabInstance: {fileID: 91145018}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &254312951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254312946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7023cfff9f28e14b8e3deb43f17690c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WolfTrap_GPI
-  m_trapSound: {fileID: 0}
 --- !u!1 &307570553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,6 +1456,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2031737564}
+  - {fileID: 8714949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &629811628
@@ -1492,9 +1472,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Behavior
   m_inputAction: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
+  m_scoreManager: {fileID: 1293098190}
   m_speed: 5
   m_jumpForce: 5
   m_soundManager: {fileID: 1445351504}
+  m_GrindSliding: {fileID: 8714948}
   m_debugAutoRun: 1
 --- !u!50 &629811629
 Rigidbody2D:
@@ -3655,6 +3637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Score_Manager
   m_cameraBehavior: {fileID: 963194229}
   m_score: 0
+  m_highestScore: 0
 --- !u!4 &1293098191
 Transform:
   m_ObjectHideFlags: 0
@@ -5802,4 +5785,3 @@ SceneRoots:
   - {fileID: 3516695382880961171}
   - {fileID: 9162969027007814317}
   - {fileID: 91145018}
-  - {fileID: 8714949}

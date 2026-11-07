@@ -18,12 +18,11 @@ public class Player_Behavior : MonoBehaviour
     private Rigidbody2D m_rigidbody2D;
 
     [Header("DESIGN")]
+    [SerializeField] private Score_Manager m_scoreManager;
     private bool m_isGrounded;
     private bool m_canMove;
 
-    [Space(5)]
     public int m_speed;
-
     [Space(5)]
     [SerializeField]
     private int m_jumpForce;
@@ -32,7 +31,7 @@ public class Player_Behavior : MonoBehaviour
     [Header("SOUNDS")]
     public Sound_Manager m_soundManager;
     private AudioSource m_audioSource;
-    [SerializeField] private AudioSource m_GrindSliding;
+    public AudioSource m_GrindSliding;//Needed in StopRiding Script
 
     [Header("ANIMATION & SR")]
     private Animator m_animator;
@@ -206,6 +205,8 @@ public class Player_Behavior : MonoBehaviour
     public void TransitionToDeathScreen()
     {
         //Debug.LogError("TU ES MORT");
+
+        m_scoreManager.SaveScore();
         SceneManager.LoadScene("Death_Scene");
     }
     
