@@ -15,10 +15,11 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private float m_distanceForPlatformSpawn;
     [Space(2)]
     [SerializeField] private float m_distanceBetweenPlatform;
-
+    private int m_previousRandom = -1;
+    private int m_random = -1;
     [Header("LIST")]
-    [SerializeField]
     private List<Transform> m_platformCache;
+    [Tooltip("Number of platf in-game before delete")]
     [SerializeField] private int m_maxPlatformCount;
 
 
@@ -53,12 +54,27 @@ public class LevelGenerator : MonoBehaviour
     {
         spawnPosition.x += m_distanceBetweenPlatform;
 
-        //Randomize spawning
-        int random = Random.Range(0, m_platformPrefab.Length);//0 to 2
-
-
-        GameObject newPlatform = Instantiate(m_platformPrefab[random], spawnPosition, Quaternion.identity);
+        GameObject newPlatform = Instantiate(m_platformPrefab[Randomize()], spawnPosition, Quaternion.identity);
         return newPlatform.transform;
+    }
+
+    int Randomize()
+    {
+        //Randomize spawning
+        do
+        {
+            m_random = Random.Range(0, m_platformPrefab.Length);//0 to 2
+
+        } while (m_previousRandom == m_random);
+        
+        m_previousRandom = m_random;
+
+
+
+
+
+
+        return m_random;
     }
 
 }

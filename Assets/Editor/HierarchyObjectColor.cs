@@ -49,6 +49,11 @@ public class HierarchyObjectColor
                 backgroundColor = new Color(1f, 0.4f, 0.7f);
                 textColor = Color.white;
             }
+            if (obj.name == "EventSystem")
+            {
+                backgroundColor = Color.black;
+                textColor = Color.white;
+            }
 
             // Or you can use switch case
             //switch (obj.name)

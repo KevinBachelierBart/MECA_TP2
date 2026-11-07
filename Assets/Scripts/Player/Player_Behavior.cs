@@ -134,15 +134,15 @@ public class Player_Behavior : MonoBehaviour
         {
             m_rigidbody2D.AddForce(Vector2.up * m_jumpForce, ForceMode2D.Impulse);
             m_isGrounded = false;
+            m_soundManager.PlayAudio(m_soundManager.m_jumpingSound);
         }
         /*
         else
         {
             Debug.Log("Tu as deja fait ton double saut");
         }*/
-        
-        m_soundManager.PlayAudio(m_soundManager.m_jumpingSound);
-        
+
+
         SparkEffect(false);
         m_GrindSliding.Stop();//Grinding
     }
