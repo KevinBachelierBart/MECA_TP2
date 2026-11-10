@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuUI : MonoBehaviour
+public class Menus_Logic : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
