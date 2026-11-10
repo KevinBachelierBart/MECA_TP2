@@ -3404,7 +3404,7 @@ MonoBehaviour:
   m_distanceForPlatformSpawn: 10
   m_distanceBetweenPlatform: 6
   m_maxPlatformCount: 4
-  m_debugMode: 1
+  m_debugMode: 0
   m_debugPlatformChoice: 3
 --- !u!4 &1171032858
 Transform:

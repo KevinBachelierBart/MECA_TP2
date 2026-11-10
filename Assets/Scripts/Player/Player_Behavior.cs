@@ -132,6 +132,7 @@ public class Player_Behavior : MonoBehaviour
         SetBoolAnimation("a_IsGrounded", false);
         if (m_doubleJump <= 2)
         {
+            m_rigidbody2D.linearVelocity = Vector2.zero;
             m_rigidbody2D.AddForce(Vector2.up * m_jumpForce, ForceMode2D.Impulse);
             m_isGrounded = false;
             m_soundManager.PlayAudio(m_soundManager.m_jumpingSound);
