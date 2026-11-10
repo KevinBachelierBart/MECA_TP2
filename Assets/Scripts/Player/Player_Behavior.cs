@@ -12,6 +12,10 @@ public class Player_Behavior : MonoBehaviour
     private InputAction m_move;
     private Vector2 moveAmt;
     private InputAction m_jump;
+    private InputAction m_startGame;
+
+    [Header("SCRIPTS RELATED")]
+    [SerializeField] private TimeScale m_timeScale;
 
     [Space(5)]
     [Header("Rigidbody 2D")]
@@ -47,6 +51,7 @@ public class Player_Behavior : MonoBehaviour
     {
         m_move = m_inputAction.FindAction("Move");
         m_jump = m_inputAction.FindAction("Jump");
+        m_startGame = m_inputAction.FindAction("StartGame");
 
         m_rigidbody2D = GetComponent<Rigidbody2D>();
 
@@ -69,10 +74,22 @@ public class Player_Behavior : MonoBehaviour
         if (isJumping)
         {
             Jumping();
-            
         }
 
         Falling();
+
+
+        //J'ai tellement du mal à faire communiquer quoi par qui.
+        //Le joueur doit-il gérer l'input de Press Enter to play ?
+        //Qui retire le UI ? J'ai pris la décision du joueur. Mais c'est con je trouve
+        bool StartingGame = m_startGame.WasPressedThisFrame();
+        if (StartingGame)
+        {
+            StartGame();
+            GameObject myPanel = GameObject.Find("Panel_StartGame");//Sera lu 1x donc acceptable..?
+            myPanel.SetActive(false);
+        }
+        
     }
 
     #region Mechanics
@@ -196,6 +213,11 @@ public class Player_Behavior : MonoBehaviour
             m_doubleJump = 0;
             m_GrindSliding.Play();
         }
+    }
+
+    private void StartGame()
+    {
+        m_timeScale.SetTimeScale(1f);
     }
 
     public void SparkEffect(bool isActivated)

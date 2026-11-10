@@ -8,11 +8,11 @@ public class Cursor_Behavior : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Game")
         {
-            Cursor.visible = true;
+            Cursor.visible = false;
         }
         else
         {
-            Cursor.visible = false;
+            Cursor.visible = true;
         }
         
 
