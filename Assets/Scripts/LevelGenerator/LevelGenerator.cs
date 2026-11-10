@@ -23,7 +23,9 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private int m_maxPlatformCount;
 
 
-
+    [Header("DEBUG")]
+    [SerializeField] private bool m_debugMode = false;
+    [SerializeField] private int m_debugPlatformChoice = -1;
     void Start()
     {
         m_platformCache = new List<Transform>();
@@ -54,8 +56,20 @@ public class LevelGenerator : MonoBehaviour
     {
         spawnPosition.x += m_distanceBetweenPlatform;
 
-        GameObject newPlatform = Instantiate(m_platformPrefab[Randomize()], spawnPosition, Quaternion.identity);
-        return newPlatform.transform;
+        
+        
+        if (m_debugMode)
+        {
+            GameObject newPlatformDebug = Instantiate(m_platformPrefab[m_debugPlatformChoice], spawnPosition, Quaternion.identity);
+            return newPlatformDebug.transform;
+        }
+        else
+        {
+            GameObject newPlatform = Instantiate(m_platformPrefab[Randomize()], spawnPosition, Quaternion.identity);
+            return newPlatform.transform;
+        }
+
+            
     }
 
     int Randomize()

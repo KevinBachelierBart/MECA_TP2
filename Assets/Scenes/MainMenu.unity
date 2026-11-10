@@ -572,6 +572,7 @@ GameObject:
   - component: {fileID: 675700788}
   - component: {fileID: 675700787}
   - component: {fileID: 675700786}
+  - component: {fileID: 675700789}
   m_Layer: 5
   m_Name: ButtonQuit
   m_TagString: Untagged
@@ -644,7 +645,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1774172235}
-        m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
+        m_TargetAssemblyTypeName: Menus_Logic, Assembly-CSharp
         m_MethodName: QuitApp
         m_Mode: 1
         m_Arguments:
@@ -693,6 +694,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675700784}
   m_CullTransparentMesh: 1
+--- !u!114 &675700789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675700784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1692811018}
+          m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: QUIT
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1692811018}
+          m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+          m_MethodName: set_text
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: I knew it !
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &690987380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,7 +1972,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1692811017}
-  - component: {fileID: 1692811020}
   - component: {fileID: 1692811019}
   - component: {fileID: 1692811018}
   m_Layer: 5
@@ -2055,51 +2100,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692811016}
   m_CullTransparentMesh: 1
---- !u!114 &1692811020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692811016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1692811018}
-          m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-          m_MethodName: set_text
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: QUIT
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1692811018}
-          m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-          m_MethodName: set_text
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: I knew it !
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1712126796
 GameObject:
   m_ObjectHideFlags: 0
