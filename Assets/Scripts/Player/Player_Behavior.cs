@@ -26,7 +26,7 @@ public class Player_Behavior : MonoBehaviour
     private bool m_isGrounded;
     private bool m_canMove;
 
-    public int m_speed;
+    public float m_speed;
     [Space(5)]
     [SerializeField]
     private int m_jumpForce;
@@ -87,7 +87,10 @@ public class Player_Behavior : MonoBehaviour
         {
             StartGame();
             GameObject myPanel = GameObject.Find("Panel_StartGame");//Sera lu 1x donc acceptable..?
-            myPanel.SetActive(false);
+            if (myPanel != null) 
+            {
+                myPanel.SetActive(false);
+            }
         }
         
     }

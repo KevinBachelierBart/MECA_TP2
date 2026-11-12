@@ -1920,8 +1920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc710442571107342882d5a0a5c038ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Difficulty_Manager
-  m_delayIncreaseDifficulty: 10
-  m_increaseValue: 1
+  m_elapsed: 0
+  m_increaseValue: 0.05
 --- !u!1 &647520090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,7 +3860,7 @@ MonoBehaviour:
   m_distanceBetweenPlatform: 6
   m_maxPlatformCount: 4
   m_debugMode: 0
-  m_debugPlatformChoice: 3
+  m_debugPlatformChoice: 1
 --- !u!4 &1171032858
 Transform:
   m_ObjectHideFlags: 0
